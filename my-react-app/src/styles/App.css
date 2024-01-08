@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Added for better box model handling */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 200px 1fr 300px;
+  grid-template-columns: 1fr;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "h1-title nav-bar search-bar";
+  grid-template-columns: 250px 1fr 200px;
+}
+
+.h1-title {
+  color: darkgray;
+  margin: 20px 0px 0px 20px;
+  grid-area: h1-title;
+}
+
+.nav-bar {
+  display: grid;
+  grid-area: nav-bar;
+  font-size: 22px;
+  font-weight: 700;
+  grid-template-columns: repeat(4, 95px);
+  justify-content: center;
+  margin: 30px 0px 0px 0px;
+}
+
+.search-bar {
+    display: grid;
+    grid-area: search-bar;
+    padding: 5px; 
+    border: none; 
+    background: none;
+    margin-top: 30px;
+  }
+  
+  .search-bar::placeholder {
+    color: darkgray; 
+    font-size: 18px;
+  }
+  
+.search-icon{
+   grid-area: search-bar;
+   position: absolute;
+   right: 200px;
+   top: 20px
+}
+
+a {
+  text-decoration: none;
+  color: darkgray;
+}
