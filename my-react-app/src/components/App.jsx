@@ -3,7 +3,7 @@ import "../styles/Header.css"
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Header } from "./Header";
-import { Carousel } from "./Carousel"
+import { Carousel } from "./Carousel";
 
 function App() {
   const location = useLocation();

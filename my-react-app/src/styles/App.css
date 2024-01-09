@@ -34,3 +34,48 @@ body,
   font-size: 55px;
   font-weight: 900;
 }
+
+.carousel-container {
+  width: 50%;
+  }
+
+.slide{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 150px;
+  margin-right: 50px;
+  color: black;
+  border: 2px darkgrey solid;
+  background: rgb(169, 169, 169, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.car-img{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.car-container{
+  display: flex;
+  gap: 20px;
+}
+
+.speed, .zero-sixty, .price, .year, .colour{
+  display: flex;
+  font-size: 30px;
+  font-weight: 800;
+} 
+
+.sub-speed, .sub-zero-sixty, .sub-price, .sub-year, .sub-colour{
+color: black;
+font-size: 25px;
+}
+
+.spec-1{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
