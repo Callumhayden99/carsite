@@ -1,37 +1,70 @@
 import { NavLink } from "react-router-dom";
-import search from "../assets/search.svg";
+import logo from "../assets/logo.png";
 
 export const Header = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Implement search functionality here
+    console.log("Search submitted");
+  };
   return (
     <>
       <header className="header">
-        <h1 className="h1-title">Luxury Motors</h1>
+        <img className="h1-title" src={logo} width={250} alt="Logo" />
         <nav className="nav-bar">
-          <NavLink className="home" activeClassName="active" to="/">
-            <span>Home</span>
-          </NavLink>
-          <NavLink className="cars" activeClassName="active" to="/cars">
-            <span>Cars</span>
-          </NavLink>
-          <NavLink className="services" activeClassName="active" to="/services">
-            <span>Services</span>
-          </NavLink>
-          <NavLink className="about-us" activeClassName="active" to="/about">
-            <span>About Us</span>
-          </NavLink>
+          <div className="button_cont">
+            <NavLink
+              to="/"
+              className="example_d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Home
+            </NavLink>
+          </div>
+          <div className="button_cont">
+            <NavLink
+              to="/Cars"
+              className="example_d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cars
+            </NavLink>
+          </div>
+          <div className="button_cont">
+            <NavLink
+              to="/Services"
+              className="example_d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Services
+            </NavLink>
+          </div>
+          <div className="button_cont">
+            <NavLink
+              to="/About us"
+              className="example_d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              About Us
+            </NavLink>
+          </div>
         </nav>
         <div className="search-container">
-          <img
-            className="search-icon"
-            src={search}
-            width={40}
-            alt="search icon"
-          />
-          <input
-            className="search-bar"
-            type="text"
-            placeholder="Search for a car"
-          ></input>
+          <form onSubmit={handleSubmit} role="search">
+            <label htmlFor="search"></label>
+            <input
+              id="search"
+              type="search"
+              placeholder="Search for a car..."
+              autoFocus
+              required
+            />
+            <button type="submit">Go</button>
+          </form>
         </div>
       </header>
     </>

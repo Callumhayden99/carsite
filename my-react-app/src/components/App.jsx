@@ -1,7 +1,9 @@
 import "../styles/App.css";
+import "../styles/Header.css"
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Header } from "./Header";
+import { Carousel } from "./Carousel"
 
 function App() {
   const location = useLocation();
@@ -31,6 +33,7 @@ function App() {
             WELCOME TO THE <strong>LUXURY MOTORS</strong>
             <br></br>
             <div className="welcome-content2">CAR DEALERSHIP</div>
+            <Carousel/>
           </div>
         </main>
         <footer></footer>
