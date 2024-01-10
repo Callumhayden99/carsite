@@ -20,6 +20,7 @@ export const Carousel = () => {
       naturalSlideHeight={120}
       totalSlides={5}
     >
+      <div className="swipe">Swipe right</div>
       <Slider>
         <Slide index={0}>
           <div className="slide">

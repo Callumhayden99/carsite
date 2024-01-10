@@ -1,0 +1,60 @@
+.carousel-container {
+  width: 50%;
+}
+
+.swipe {
+  display:
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 50px;
+  color: black;
+  background: rgb(169, 169, 169, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.car-img {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.car-container {
+  display: flex;
+  gap: 20px;
+}
+
+.speed,
+.zero-sixty,
+.price,
+.year,
+.colour {
+  display: flex;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.sub-speed,
+.sub-zero-sixty,
+.sub-price,
+.sub-year,
+.sub-colour {
+  color: black;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.spec-1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}

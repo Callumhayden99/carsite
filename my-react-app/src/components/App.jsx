@@ -1,5 +1,6 @@
 import "../styles/App.css";
 import "../styles/Header.css"
+import "../styles/Carousel.css"
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Header } from "./Header";
