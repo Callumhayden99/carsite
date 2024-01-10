@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <img className="h1-title" src={logo} width={250} alt="Logo" />
+        <img className="h1-title" src={logo} width={450} alt="Logo" />
         <nav className="nav-bar">
           <div className="button_cont">
             <NavLink

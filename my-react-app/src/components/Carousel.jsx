@@ -40,7 +40,7 @@ export const Carousel = () => {
             <Slider>
               <Slide index={0}>
                 <div className="slide">
-                  Lamborghini Huracan Tecnica
+                  LAMBORGHINI HURACAN TECNICA
                   <div className="car-container">
                     <img
                       className="car-img"
@@ -75,7 +75,7 @@ export const Carousel = () => {
               </Slide>
               <Slide index={1}>
                 <div className="slide">
-                  Aston Martin Vantage
+                  ASTON MARTIN VANTAGE
                   <div className="car-container">
                     <img
                       className="car-img"
@@ -110,7 +110,7 @@ export const Carousel = () => {
               </Slide>
               <Slide index={2}>
                 <div className="slide">
-                  Audi R8 Spyder
+                AUDI R8 SPYDER
                   <div className="car-container">
                     <img
                       className="car-img"
@@ -145,7 +145,7 @@ export const Carousel = () => {
               </Slide>
               <Slide index={3}>
                 <div className="slide">
-                  Ferrari SF90
+                   FERRARI SF90
                   <div className="car-container">
                     <img
                       className="car-img"
@@ -180,7 +180,7 @@ export const Carousel = () => {
               </Slide>
               <Slide index={4}>
                 <div className="slide">
-                  Mclaren P1
+                 MCLAREN P1
                   <div className="car-container">
                     <img
                       className="car-img"

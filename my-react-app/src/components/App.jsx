@@ -1,6 +1,6 @@
 import "../styles/App.css";
-import "../styles/Header.css"
-import "../styles/Carousel.css"
+import "../styles/Header.css";
+import "../styles/Carousel.css";
 import { useEffect } from "react";
 import { useLocation, Routes, Route } from "react-router-dom";
 import { Header } from "./Header";
@@ -8,6 +8,7 @@ import { Cars } from "./Cars";
 import { Carousel } from "./Carousel";
 import { Services } from "./Services";
 import { AboutUs } from "./AboutUs";
+import { MainContent } from "./MainContent";
 
 function App() {
   const location = useLocation();
@@ -31,24 +32,20 @@ function App() {
   return (
     <>
       <div className="container">
-        <Header/>
+        <Header />
         <main>
-        <Cars/>
-        <Services/>
-        <AboutUs/>
-          <div className="welcome-content">
-            WELCOME TO THE <strong>LUXURY MOTORS</strong>
-            <br></br>
-            <div className="welcome-content2">CAR DEALERSHIP</div>
-            <Carousel/>
-          </div>
-          <Routes>
-            <Route path="/"/>
-            <Route path="/cars"/>
-            <Route path="/services"/>
-            <Route path="/aboutUs"/>
-          </Routes>
+          <Cars />
+          <Services />
+          <AboutUs />
+          <MainContent />
+          <Carousel />
         </main>
+        <Routes>
+          <Route path="/" />
+          <Route path="/cars" />
+          <Route path="/services" />
+          <Route path="/aboutUs" />
+        </Routes>
         <footer></footer>
       </div>
     </>
