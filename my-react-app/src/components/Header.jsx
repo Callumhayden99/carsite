@@ -59,7 +59,7 @@ export const Header = () => {
             <input
               id="search"
               type="search"
-              placeholder="Search for a car..."
+              placeholder="Search by make..."
               autoFocus
               required
             />
