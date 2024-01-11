@@ -39,7 +39,7 @@ export const Carousel = () => {
       <div className="carousel-container">
         <CarouselProvider
           naturalSlideWidth={50}
-          naturalSlideHeight={120}
+          naturalSlideHeight={23}
           totalSlides={5}
           currentSlide={currentSlide}
           isPlaying={true}
@@ -227,7 +227,7 @@ export const Carousel = () => {
       <div className="carousel-container">
         <CarouselProvider
           naturalSlideWidth={50}
-          naturalSlideHeight={120}
+          naturalSlideHeight={23}
           totalSlides={5}
           currentSlide={currentSlide}
           isPlaying={true}
@@ -414,10 +414,10 @@ export const Carousel = () => {
           </Slider>
         </CarouselProvider>
       </div>
-      <div className="carousel-container2">
+      <div className="carousel-container">
         <CarouselProvider
           naturalSlideWidth={50}
-          naturalSlideHeight={120}
+          naturalSlideHeight={25}
           totalSlides={5}
           currentSlide={currentSlide}
           isPlaying={true}
@@ -602,10 +602,10 @@ export const Carousel = () => {
           </Slider>
         </CarouselProvider>
         </div>
-        <div className="carousel-container2">
+        <div className="carousel-container">
           <CarouselProvider
             naturalSlideWidth={50}
-            naturalSlideHeight={120}
+            naturalSlideHeight={25}
             totalSlides={5}
             currentSlide={currentSlide}
             isPlaying={true}

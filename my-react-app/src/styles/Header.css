@@ -66,6 +66,8 @@
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease 0s;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+
 }
 
 .example_d:hover {
@@ -119,6 +121,7 @@ input[type="search"] {
   transition-property: width, border-radius;
   z-index: 1;
   position: relative;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
 input[type="search"]::placeholder {

@@ -60,7 +60,7 @@ export const MainContent = () => {
             <Route path="/sell"/>
         </Routes>
       </div>
-      <h3 className="latest-arrivals">Latest Arrivals</h3>
+      <h3 className="latest-arrivals">LATEST ARRIVALS</h3>
       <hr className="latest-hr"></hr>
     </>
   );
