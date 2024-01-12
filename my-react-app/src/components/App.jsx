@@ -2,6 +2,7 @@ import "../styles/App.css";
 import "../styles/Header.css";
 import "../styles/Carousel.css";
 import "../styles/Aboutus.css";
+import "../styles/Cars.css";
 import "../styles/Footer.css";
 import { useEffect } from "react";
 import { useLocation, Routes, Route } from "react-router-dom";
@@ -50,7 +51,7 @@ function App() {
               </>
             }
           />
-         
+
           <Route
             path="/cars"
             element={
@@ -69,14 +70,15 @@ function App() {
               </>
             }
           />
-           <Route
-           path="/Aboutus"
-           element={
-             <>
-               <AboutUs />
-               <Footer />
-             </>
-           }/>
+          <Route
+            path="/Aboutus"
+            element={
+              <>
+                <AboutUs />
+                <Footer />
+              </>
+            }
+          />
         </Routes>
       </div>
     </>

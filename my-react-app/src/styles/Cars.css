@@ -1,0 +1,59 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     font-family: 'roboto';
+
+}
+
+.filter-h1{
+    color: white;
+    font-size: 18px;
+    margin: 50px 0px 40px 40px;
+    border: 1px white solid;
+    width: fit-content;
+    padding: 20px 40px;
+}
+
+.filter-h2{
+    color: white;
+    font-size: 20px;
+    margin: 50px 0px 40px 40px;
+}
+
+.car-options {
+    display: grid;
+    grid-template-columns: repeat(2, 150px); /* Creates two columns */
+    grid-gap: 10px; /* Optional: adds gap between rows and columns */
+    margin-left: 40px;
+    color: darkgray;
+    font-size: 15px;
+    row-gap: 20px;
+}
+
+.search-bodystyle{
+    color: white;
+    font-size: 20px;
+    margin: 50px 0px 40px 40px;
+}
+
+.latest{
+    color: white;
+    font-size: 20px;
+    margin: 50px 0px 40px 40px;
+}
+
+.car-option{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 10px; 
+    margin-left: 40px;
+    color: darkgray;
+    font-size: 15px;
+}
+
+.sell{
+    color: white;
+    font-size: 20px;
+    margin: 50px 0px 40px 40px;
+}
+
