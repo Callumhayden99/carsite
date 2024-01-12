@@ -4,7 +4,7 @@ import logo99 from "../assets/logo99.png";
 export const Header = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Implement search functionality here
+ 
     console.log("Search submitted");
   };
   return (
@@ -16,7 +16,6 @@ export const Header = () => {
             <NavLink
               to="/"
               className="example_d"
-              target="_blank"
               rel="noopener noreferrer"
             >
               Home
@@ -26,7 +25,6 @@ export const Header = () => {
             <NavLink
               to="/Cars"
               className="example_d"
-              target="_blank"
               rel="noopener noreferrer"
             >
               Cars
@@ -36,17 +34,15 @@ export const Header = () => {
             <NavLink
               to="/Services"
               className="example_d"
-              target="_blank"
               rel="noopener noreferrer"
             >
               Services
             </NavLink>
           </div>
           <div className="button_cont">
-            <NavLink
-              to="/About us"
+          <NavLink
+              to="/Aboutus"
               className="example_d"
-              target="_blank"
               rel="noopener noreferrer"
             >
               About Us

@@ -22,7 +22,7 @@ export const Footer = () => {
 </div>
 
 <div className="row">
-INFERNO Copyright © 2021 Luxury - All rights reserved || Designed By: Callum 
+LUXURY Copyright © 2021 Luxury - All rights reserved || Designed By: LUXURY MOTORS
 </div>
 </div>
 </footer>

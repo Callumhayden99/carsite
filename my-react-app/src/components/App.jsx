@@ -11,7 +11,7 @@ import { Carousel } from "./Carousel";
 import { Services } from "./Services";
 import { AboutUs } from "./AboutUs";
 import { MainContent } from "./MainContent";
-import { Footer } from "./Footer"
+import { Footer } from "./Footer";
 
 function App() {
   const location = useLocation();
@@ -36,20 +36,48 @@ function App() {
     <>
       <div className="container">
         <Header />
-        <div className="main-content">
-          <Cars />
-          <Services />
-          <MainContent />
-          <Carousel />
-          <AboutUs />
-          </div>
         <Routes>
-          <Route path="/" />
-          <Route path="/cars" />
-          <Route path="/services" />
-          <Route path="/aboutUs" />
+          <Route
+            path="/"
+            element={
+              <>
+                <div className="main-content">
+                  <MainContent />
+                  <Carousel />
+                  <AboutUs />
+                </div>
+                <Footer />
+              </>
+            }
+          />
+         
+          <Route
+            path="/cars"
+            element={
+              <>
+                <Cars />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/services"
+            element={
+              <>
+                <Services />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+           path="/Aboutus"
+           element={
+             <>
+               <AboutUs />
+               <Footer />
+             </>
+           }/>
         </Routes>
-        <Footer/>
       </div>
     </>
   );
