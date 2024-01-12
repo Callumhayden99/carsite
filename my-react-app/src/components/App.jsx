@@ -21,7 +21,7 @@ function App() {
     switch (location.pathname) {
       case "/":
         bodyStyle.backgroundImage =
-          'url("https://www.topgear.com/sites/default/files/2021/11/DSC01735.jpg")';
+          'url("https://pharoahgroup.com/wp-content/uploads/2-1.jpg';
         bodyStyle.backgroundSize = "cover";
         bodyStyle.backgroundPosition = "center";
         bodyStyle.backgroundRepeat = "no-repeat";

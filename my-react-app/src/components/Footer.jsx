@@ -22,7 +22,7 @@ export const Footer = () => {
 </div>
 
 <div className="row">
-INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+INFERNO Copyright © 2021 Luxury - All rights reserved || Designed By: Callum 
 </div>
 </div>
 </footer>
