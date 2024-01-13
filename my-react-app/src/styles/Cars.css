@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: Roboto,Helvetica Neue,Arial;
 }
 
 .open-filters-btn {
@@ -66,6 +67,7 @@
 .filter-h1 {
   color: black;
   font-size: 18px;
+  font-weight: 200;
   margin: 50px 0px 20px 20px;
   border: 1px black solid;
   width: fit-content;
@@ -76,6 +78,7 @@
   color: black;
   font-size: 15px;
   margin: 20px 0px 30px 20px;
+  
 }
 
 .car-options {
@@ -116,6 +119,7 @@
   border: 1px black solid;
   width: fit-content;
   padding: 20px 40px;
+  font-weight: 200;
 }
 
 .car-slide {
@@ -124,7 +128,7 @@
   flex-wrap: wrap;
   width: fit-content;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 400;
   gap: 10px;
   min-height: 300px;
   margin: 5px 100px 0px 23px;
@@ -158,8 +162,7 @@
   display: flex;
   color: white;
   font-size: 20px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
   margin-top: 20px;
 }
 
@@ -170,8 +173,7 @@
 .sub-colour2 {
   color: black;
   font-size: 20px;
-  font-weight: 300;
-  font-family: "Roboto";
+  font-weight: 200;
   margin-top: 20px;
 }
 
