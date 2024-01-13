@@ -58,7 +58,7 @@ function App() {
             element={
               <>
                 <Cars />
-                <Footer />
+                
               </>
             }
           />

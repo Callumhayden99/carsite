@@ -1,59 +1,121 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "roboto";
+}
+
+.open-filters-btn {
+  position: fixed;
+  left: 50px; /* Adjust position for visibility */
+  top: 150px; /* Adjust position for visibility */
+  background-color: white;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 1000; /* Make sure it's above other elements */
+}
+.sidebar {
+  display: block;
+  position: fixed;
+  left: -780px;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  padding-left: 30px;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar.open {
+  left: 0;
+  margin-top: 130px;
+}
+
+.sidebar.closed {
+  left: -400px;
+}
+
+.close-sidebar-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: darkgray; /* Red background color */
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1001; /* Ensure it's above other elements */
+}
+
+.footer-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .filter-h1 {
-  color: white;
+  color: black;
   font-size: 18px;
-  margin: 50px 0px 40px 40px;
-  border: 1px white solid;
+  margin: 50px 0px 20px 20px;
+  border: 1px black solid;
   width: fit-content;
   padding: 20px 40px;
 }
 
 .filter-h2 {
-  color: white;
-  font-size: 20px;
-  margin: 50px 0px 40px 40px;
+  color: black;
+  font-size: 15px;
+  margin: 20px 0px 30px 20px;
 }
 
 .car-options {
   display: grid;
   grid-template-columns: repeat(2, 150px); /* Creates two columns */
   grid-gap: 10px; /* Optional: adds gap between rows and columns */
-  margin-left: 40px;
+  margin-left: 20px;
   color: darkgray;
   font-size: 15px;
   row-gap: 20px;
 }
 
 .search-bodystyle {
-  color: white;
-  font-size: 20px;
-  margin: 50px 0px 40px 40px;
+  color: black;
+  font-size: 15px;
+  margin: 20px 0px 30px 20px;
 }
 
 .latest {
-  color: white;
-  font-size: 20px;
-  margin: 50px 0px 40px 40px;
+  color: black;
+  font-size: 15px;
+  margin: 30px 0px 20px 20px;
 }
 
 .car-option {
   display: grid;
   grid-template-columns: repeat(2, 150px);
   grid-gap: 10px;
-  margin-left: 40px;
+  margin-left: 20px;
   color: darkgray;
   font-size: 15px;
 }
 
 .sell {
-  color: white;
-  font-size: 20px;
-  margin: 50px 0px 40px 40px;
+  color: black;
+  font-size: 15px;
+  margin: 0px 0px 20px 30px;
+  border: 1px black solid;
+  width: fit-content;
+  padding: 20px 40px;
 }
 
 .car-slide {
@@ -61,11 +123,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: fit-content;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
   gap: 10px;
   min-height: 300px;
-  margin: 5px 100px 0px 35px;
+  margin: 5px 100px 0px 23px;
   color: black;
   background: rgb(169, 169, 169, 0.8);
   border-radius: 10px;
@@ -95,9 +157,10 @@
 .colour2 {
   display: flex;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
 }
 
 .sub-speed2,
@@ -106,14 +169,13 @@
 .sub-year2,
 .sub-colour2 {
   color: black;
-  font-size: 25px;
-  margin-top: 5px;
+  font-size: 20px;
   font-weight: 300;
   font-family: "Roboto";
+  margin-top: 20px;
 }
 
 .spec-2 {
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
   }
