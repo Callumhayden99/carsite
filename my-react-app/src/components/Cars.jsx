@@ -92,7 +92,7 @@ export const Cars = () => {
         <div className="left-menu">
     <CarouselProvider
       naturalSlideWidth={100}
-      naturalSlideHeight={125}
+      naturalSlideHeight={116}
       totalSlides={totalSlides}
       currentSlide={currentSlide}
       isPlaying={true}

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import shelby from "../assets/shelby.jpg";
 import tele from "../assets/tele.png";
 import autocar from "../assets/autocar.png";

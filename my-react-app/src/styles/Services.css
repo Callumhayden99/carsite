@@ -1,0 +1,46 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .show-room{
+    filter: brightness(50%)
+  }
+  
+  .image-container {
+    background-image: url('../assets/show.jpg'); /* adjust path as necessary */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .service-title {
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    z-index: 2; 
+    font-family: Roboto,Helvetica Neue,Arial;
+    font-weight: 200;
+    margin: 200px 0px 0px 200px;
+  }
+
+  .service-sub-title{
+    position: absolute;
+    color: white;
+    z-index: 2; 
+    font-size: 65px;
+    margin: 250px 0px 0px 250px;
+  }
+
+  .gg-arrow-long-down-e{
+    position: absolute;
+    color: white;
+    z-index: 2; 
+    height: 70px;
+    margin: 350px 0px 0px 260px;
+  }
+  
+  .footer-content2 {
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
