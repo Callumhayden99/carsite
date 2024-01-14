@@ -1,6 +1,8 @@
 import show from "../assets/show.jpg";
 import spanner from "../assets/spanner.jpg";
 import parts from "../assets/parts.jpg";
+import training from "../assets/training.jpg";
+import classic from "../assets/classic.jpg";
 import { Footer } from "./Footer";
 
 export const Services = () => {
@@ -11,6 +13,20 @@ export const Services = () => {
       <h1 className="service-sub-title">SERVICE</h1>
       <i className="gg-arrow-long-down-e"></i>
       <main>
+        <h1 className="luxury-service">
+          WHY CHOOSE OFFICIAL LUXURY MOTORS CAR SERVICING?
+        </h1>
+        <div className="why-luxury">
+          Who better to service your luxury car than the experts? With an Aston
+          Martin service, you can relax in the knowledge that your Aston Martin
+          is in safe hands. Our approved vehicle service technicians are
+          regularly trained in the latest techniques They use only Genuine
+          Parts, complete with a 12-month warranty, to ensure your car receives
+          the very best service. Free checks for software and mechanical updates
+          are, of course, included, as well as having the service record
+          digitally updated to securely record the provenance of your car’s
+          service history.
+        </div>
         <section className="service-main-content">
           <div className="text-content">
             <h2 className="cert-repairs">
@@ -40,7 +56,7 @@ export const Services = () => {
           </div>
         </section>
         <section className="parts-main-content">
-        <div className="parts-img-container">
+          <div className="parts-img-container">
             <img
               className="img-cut2"
               width={1400}
@@ -55,14 +71,117 @@ export const Services = () => {
               our customers in terms of quality and service and our spare parts
               are built and distributed to reflect that goal. Preserving the
               efficiency of your Lamborghini means preserving the synergy
-              between the elements. <br></br><br></br> The only solution to maintain the
-              superiority and exclusivity of your vehicle intact over time is to
-              use original spare parts. Only components that comply with the
-              specifications of each model can restore the vehicle to its
-              original high comfort and efficiency levels for optimum
-              performance, quality and safety.
+              between the elements. <br></br>
+              <br></br> The only solution to maintain the superiority and
+              exclusivity of your vehicle intact over time is to use original
+              spare parts. Only components that comply with the specifications
+              of each model can restore the vehicle to its original high comfort
+              and efficiency levels for optimum performance, quality and safety.
             </div>
           </div>
+        </section>
+        <section className="service-main-content">
+          <div className="text-content">
+            <h2 className="cert-repairs">TRAINING AND CERTIFICATION</h2>
+            <div className="repairs">
+              Located in Sant’Agata Bolognese and designed to provide training
+              and refresher courses to After Sales staff, the Lamborghini
+              Training Academy is on a mission to provide the needed skills to
+              achieve Customer Experience excellence and the highest standards
+              of service quality.<br></br>
+              <br></br>Training is led by a team of experts who make sure the
+              dealership staff becomes the perfect representation of the
+              Lamborghini spirit. This spirit is all about precision, attention
+              to details and technological evolution. Work on your vehicle will
+              be done by highly specialized and certified professionals –
+              always.
+            </div>
+          </div>
+          <div className="service-img-container">
+            <img
+              className="img-cut"
+              width={1400}
+              src={training}
+              alt="hand holding a spanner"
+            ></img>
+          </div>
+        </section>
+        <section className="parts-main-content">
+          <div className="parts-img-container">
+            <img
+              className="img-cut2"
+              width={1400}
+              src={classic}
+              alt="img that contains car parts"
+            ></img>
+          </div>
+          <div className="text-content2">
+            <h2 className="spare-parts">CLASSIC SPARE PARTS</h2>
+            <div className="parts">
+              Classic Spare Parts is the service that makes it possible to
+              replace the components of classic Lamborghini vehicles while
+              preserving their authenticity and increasing their value. Use of
+              original spare parts is essential for the preservation,
+              maintenance and restoration of classic models from Sant’Agata
+              Bolognese.<br></br>
+              <br></br> The spare parts come from a classic spare parts
+              warehouse or are manufactured on request by the original
+              suppliers. If a specific spare part is not available, it can be
+              faithfully reproduced from the original drawings and technical
+              specifications of the materials used.
+            </div>
+          </div>
+        </section>
+        <section className="booking-system">
+          <h1 className="booking-title">INFORMATION AND BOOKING SYSTEM</h1>
+          <form>
+            <div className="complete-form">
+            <div className="form-group">
+              <label htmlFor="title">Title</label>
+              <select id="title" name="title">
+                <option value="mr">MR.</option>
+                <option value="mrs">MRS.</option>
+                <option value="ms">MS.</option>
+                <option value="dr">DR.</option>
+              </select>
+            </div>
+            <div className="form-group">
+            <label htmlFor="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First name here..."
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last name here..."
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email here..."
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="username">How can we help?</label>
+            <textarea name="message" rows="10" cols="30" placeholder="Type here..."
+            ></textarea>
+          </div>
+          </div>
+          </form>  
         </section>
       </main>
       <footer className="footer-content2">

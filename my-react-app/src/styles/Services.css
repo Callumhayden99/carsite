@@ -48,6 +48,24 @@
 .service-main-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.luxury-service {
+  display: flex;
+  font-size: 33px;
+  justify-content: center;
+  color: white;
+  margin: 50px 0px 50px 0px;
+}
+
+.why-luxury {
+  color: white;
+  display: flex;
+  font-size: 23px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0px 400px 100px 400px;
 }
 
 .cert-repairs {
@@ -73,35 +91,58 @@
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-
 .parts-main-content {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 
-  .spare-parts {
-    color: white;
-    font-size: 33px;
-    margin: 100px 90px 0px 0px;
-  }
-  
-  .parts {
-    color: white;
-    font-size: 23px;
-    font-weight: 200;
-    margin: 50px 90px 0px 0px;
-  }
-  
-  .parts-img-container {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .img-cut2 {
-    justify-content: flex-start;
-    clip-path: polygon(80% 0%, 40% 100%, 0% 100%, 0% 0%);
-  }
-  
+.spare-parts {
+  color: white;
+  font-size: 33px;
+  margin: 100px 90px 0px 0px;
+}
+
+.parts {
+  color: white;
+  font-size: 23px;
+  font-weight: 200;
+  margin: 50px 90px 0px 0px;
+}
+
+.parts-img-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img-cut2 {
+  justify-content: flex-start;
+  clip-path: polygon(80% 0%, 40% 100%, 0% 100%, 0% 0%);
+}
+
+
+.booking-system{
+
+}
+
+.complete-form{
+ 
+}
+
+.booking-title{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 33px;
+  font-weight: 200;
+  margin: 50px 0px 30px 0px;
+}
+label{
+
+}
+
+.form-group{
+ margin-bottom: 40px;
+}
 
 .footer-content2 {
   margin-top: auto; /* Pushes the footer to the bottom */

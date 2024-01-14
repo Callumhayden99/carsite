@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo99 from "../assets/logo99.png";
+
 
 export const Header = () => {
   const handleSubmit = (event) => {
@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <img className="h1-title" src={logo99} width={450} alt="Logo" />
+        <h1 className="h1-title">LUXURY MOTORS</h1>
         <nav className="nav-bar">
           <div className="button_cont">
             <NavLink
