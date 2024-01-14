@@ -1,5 +1,6 @@
 * {
   font-family: Roboto, Helvetica Neue, Arial;
+  box-sizing: border-box;
 }
 
 .page-container {
@@ -56,7 +57,13 @@
   font-size: 33px;
   justify-content: center;
   color: white;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 20px 0px;
+}
+
+.service-hr{
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .why-luxury {
@@ -119,13 +126,11 @@
   clip-path: polygon(80% 0%, 40% 100%, 0% 100%, 0% 0%);
 }
 
-
-.booking-system{
-
-}
-
-.complete-form{
- 
+.booking-system {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .booking-title{
@@ -136,12 +141,29 @@
   font-weight: 200;
   margin: 50px 0px 30px 0px;
 }
-label{
 
+.form-hr{
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .form-group{
  margin-bottom: 40px;
+}
+
+input{
+  padding-right: 100px;
+  border-radius: 3px;
+}
+
+.service-button {
+  background-color: blue; /* Example color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Example padding */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .footer-content2 {

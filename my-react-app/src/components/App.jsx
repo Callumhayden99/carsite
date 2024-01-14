@@ -40,7 +40,7 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path="/"
+            path="*"
             element={
               <>
                 <div className="main-content">
