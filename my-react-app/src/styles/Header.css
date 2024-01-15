@@ -127,8 +127,7 @@ input[type="search"]::placeholder {
   color: #2f2f2f !important; 
 }
 
-button {
-  display: none;
+.submit-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -153,7 +152,8 @@ input:not(:placeholder-shown) {
     display: block;
   }
 }
-label {
+
+.search {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;

@@ -1,3 +1,4 @@
+import "../styles/Header.css";
 import { NavLink } from "react-router-dom";
 
 
@@ -51,7 +52,7 @@ export const Header = () => {
         </nav>
         <div className="search-container">
           <form onSubmit={handleSubmit} role="search">
-            <label htmlFor="search"></label>
+            <label className="search" htmlFor="search"></label>
             <input
               id="search"
               type="search"
@@ -59,7 +60,7 @@ export const Header = () => {
               autoFocus
               required
             />
-            <button type="submit">Go</button>
+            <button className="submit-button" type="submit">Go</button>
           </form>
         </div>
       </header>

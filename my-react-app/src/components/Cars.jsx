@@ -1,3 +1,4 @@
+import "../styles/Cars.css";
 import aston2 from "../assets/aston2.jpg";
 import maserati from "../assets/maserati.jpg";
 import porshe1 from "../assets/porshe1.jpg";
@@ -50,7 +51,7 @@ export const Cars = () => {
   return (
     <>
        <Header />
-      {!isSidebarOpen && ( // Only show this button when the sidebar is closed
+      {!isSidebarOpen && ( 
         <div onClick={toggleSidebar} className="open-filters-btn"> 
           Open Filters
         </div>

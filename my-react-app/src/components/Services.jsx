@@ -1,8 +1,10 @@
+import "../styles/services.css";
 import show from "../assets/show.jpg";
 import spanner from "../assets/spanner.jpg";
 import parts from "../assets/parts.jpg";
 import training from "../assets/training.jpg";
 import classic from "../assets/classic.jpg";
+import { ContactForm } from "./ContactForm";
 import { Footer } from "./Footer";
 
 export const Services = () => {
@@ -133,68 +135,7 @@ export const Services = () => {
             </div>
           </div>
         </section>
-        <section className="booking-system">
-          <h1 className="booking-title">INFORMATION AND BOOKING SYSTEM</h1>
-          <hr className="form-hr"></hr>
-          <form>
-            <div className="complete-form">
-              <div className="form-group">
-                <label htmlFor="booking-title">Title</label>
-                <select id="booking-title" name="booking-title">
-                  <option value="mr">MR.</option>
-                  <option value="mrs">MRS.</option>
-                  <option value="ms">MS.</option>
-                  <option value="dr">DR.</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label className="first" htmlFor="first-name">First Name</label>
-                <input
-                  type="text"
-                  id="first-name"
-                  name="first-name"
-                  placeholder="First name here..."
-                  required
-                  autoComplete="off"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="last-name">Last Name</label>
-                <input
-                  type="text"
-                  id="last-name"
-                  name="last-name"
-                  placeholder="Last name here..."
-                  required
-                  autoComplete="off"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="Email here..."
-                  required
-                  autoComplete="off"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">How can we help?</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="6"
-                  cols="40"
-                  placeholder="Type here..."
-                  autoComplete="off"
-                ></textarea>
-              </div>
-            </div>
-            <button className="service-button">Send enquiry</button>
-          </form>
-        </section>
+       <ContactForm/>
       </main>
       <footer className="footer-content2">
         <Footer />
@@ -202,3 +143,19 @@ export const Services = () => {
     </div>
   );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

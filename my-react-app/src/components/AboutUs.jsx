@@ -1,4 +1,4 @@
-
+import "../styles/Aboutus.css";
 import shelby from "../assets/shelby.jpg";
 import tele from "../assets/tele.png";
 import autocar from "../assets/autocar.png";
@@ -23,27 +23,52 @@ export const AboutUs = () => {
         </div>
         <div className="media-content">
           <div className="image-overlay-container">
-            <img className="shelby-cover" src={shelby} alt="mustang driving in the sun"></img>
+            <img
+              className="shelby-cover"
+              src={shelby}
+              alt="mustang driving in the sun"
+            ></img>
             <div className="overlay-content">
               <h3 className="about-us2">WHAT THE MEDIA SAY</h3>
               <hr className="media-hr"></hr>
               <div className="media-box-container">
                 <div className="box-1">
                   <div className="number">1</div>
-                  <div className="box-content">"One of the most respected high end<br></br> UK car dealers"</div>
-                  <img className='autocar' src={autocar} width={200} alt='the autocar logo'></img>
+                  <div className="box-content">
+                    "One of the most respected high end<br></br> UK car dealers"
+                  </div>
+                  <img
+                    className="autocar"
+                    src={autocar}
+                    width={200}
+                    alt="the autocar logo"
+                  ></img>
                   <hr className="hr-media-box"></hr>
                 </div>
                 <div className="box-2">
                   <div className="number">2</div>
-                  <div className="box-content">"Luxury have a reputation for stocking sensational metal"</div>
-                  <img className='telegraph' src={tele} width={300} alt='the telegraph logo'></img>
+                  <div className="box-content">
+                    "Luxury have a reputation for stocking sensational metal"
+                  </div>
+                  <img
+                    className="telegraph"
+                    src={tele}
+                    width={300}
+                    alt="the telegraph logo"
+                  ></img>
                   <hr className="hr-media-box2"></hr>
                 </div>
                 <div className="box-3">
                   <div className="number">3</div>
-                  <div className="box-content">"Long established high end car dealer"</div>
-                  <img className='evo' src={evo} width={150} alt='the evo logo'></img>
+                  <div className="box-content">
+                    "Long established high end car dealer"
+                  </div>
+                  <img
+                    className="evo"
+                    src={evo}
+                    width={150}
+                    alt="the evo logo"
+                  ></img>
                   <hr className="hr-media-box3"></hr>
                 </div>
               </div>

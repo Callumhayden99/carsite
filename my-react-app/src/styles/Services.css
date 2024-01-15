@@ -13,7 +13,7 @@
   filter: brightness(50%);
 }
 
-.image-container {
+.service-image-container {
   background-image: url("../assets/show.jpg"); /* adjust path as necessary */
   background-size: cover;
   background-position: center;
@@ -124,46 +124,6 @@
 .img-cut2 {
   justify-content: flex-start;
   clip-path: polygon(80% 0%, 40% 100%, 0% 100%, 0% 0%);
-}
-
-.booking-system {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.booking-title{
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 33px;
-  font-weight: 200;
-  margin: 50px 0px 30px 0px;
-}
-
-.form-hr{
-  width: 20%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.form-group{
- margin-bottom: 40px;
-}
-
-input{
-  padding-right: 100px;
-  border-radius: 3px;
-}
-
-.service-button {
-  background-color: blue; /* Example color */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Example padding */
-  border: none; /* Removes default border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .footer-content2 {
