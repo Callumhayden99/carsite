@@ -38,6 +38,7 @@ export const ContactForm = () =>{
                 placeholder="First Name"
                 onChange={handleChange}
                 autoComplete="given-name" // Add this line
+                required
             />
         </div>
         <div className="input-group">
@@ -50,6 +51,7 @@ export const ContactForm = () =>{
                 placeholder="Last Name"
                 onChange={handleChange}
                 autoComplete="family-name" // Add this line
+                required
             />
         </div>
         <div className="input-group">
@@ -62,6 +64,7 @@ export const ContactForm = () =>{
                 placeholder="Email"
                 onChange={handleChange}
                 autoComplete="email" // Add this line
+                required
             />
         </div>
         <div className="input-group">
@@ -72,6 +75,7 @@ export const ContactForm = () =>{
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="How can we help you..."
+                required
             ></textarea>
         </div>
         <button className="contact-button" type="submit">Submit</button>

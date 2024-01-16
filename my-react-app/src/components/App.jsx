@@ -6,6 +6,7 @@ import { Cars } from "./Cars";
 import { Carousel } from "./Carousel";
 import { Services } from "./Services";
 import { AboutUs } from "./AboutUs";
+import { OurValues } from "./OurValues";
 import { MainContent } from "./MainContent";
 import { Footer } from "./Footer";
 
@@ -40,7 +41,7 @@ function App() {
                 <div className="main-content">
                   <MainContent />
                   <Carousel />
-                  <AboutUs />
+                  <OurValues />
                 </div>
                 <Footer />
               </>
