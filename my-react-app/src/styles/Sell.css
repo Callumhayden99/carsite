@@ -211,12 +211,97 @@ background-color: grey;
 background-color: black;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: red;
+}
+
 .purchase{
   font-weight: 200;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .learn-more{
   font-weight: 200;
   font-size: 18px;
+}
+
+.learnmore{
+  background-color: darkgray;
+  margin: 50px 30px;
+  height: 600px;
+}
+
+.learn-h3{
+  padding-top: 30px;
+  font-size: 35px;
+  font-weight: 200;
+  margin: 0px 0px 0px 100px;
+}
+
+.outright-p1{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px 0px 0px 100px;
+}
+
+.outright-p2{
+  font-size: 25px;
+  margin: 50px 0px 20px 100px;
+  font-weight: 200;
+}
+
+.aside-container{
+  float: right;
+}
+
+.outright-aside{
+  background-color: rgb(197, 197, 197);
+  padding: 50px ;
+  line-height: 3;
+  margin: 0px 100px 0px 100px;
+  border-radius: 5px;
+}
+
+.benefits{
+  font-size: 20px;
+}
+
+.benefits-ul{
+  font-size: 15px;
+}
+
+.learnmore2{
+  background-color: darkgray;
+  margin: 50px 30px;
+  height: 700px;
+}
+
+.benefits-ul2{
+  font-size: 15px;
+  max-width: 500px;
+  
+}
+
+.learnmore3{
+  background-color: darkgray;
+  margin: 50px 30px;
+  height: 600px;
+}
+
+.learnmore4{
+  background-color: darkgray;
+  margin: 50px 30px;
+  height: 550px;
+}
+
+.bugatti{
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+    z-index: -1; /* Ensure image stays in the background */
+    filter: brightness(50%);
 }

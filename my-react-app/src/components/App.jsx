@@ -79,6 +79,7 @@ function App() {
             element={
               <>
                 <Sell />
+                <Footer />
               </>
               
             }
