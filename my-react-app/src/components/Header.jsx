@@ -49,6 +49,15 @@ export const Header = () => {
               About Us
             </NavLink>
           </div>
+          <div className="button_cont">
+          <NavLink
+              to="/sell"
+              className="example_d"
+              rel="noopener noreferrer"
+            >
+              Sell
+            </NavLink>
+          </div>
         </nav>
         <div className="search-container">
           <form onSubmit={handleSubmit} role="search">

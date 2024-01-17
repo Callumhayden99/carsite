@@ -17,23 +17,22 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 700px; /* Increased from 600px */
     margin: auto;
     margin-bottom: 50px;
-    padding: 20px;
+    padding: 25px; /* Increased padding */
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px; /* Slightly more rounded */
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Increased spacing */
 }
 
 .input-group label {
     display: block;
-    font-size: 20px;
-    font-weight: 200;
-    margin-bottom: 5px;
+    font-size: 22px; /* Increased font size */
+    margin-bottom: 10px; /* Increased spacing */
     font-weight: bold;
     color: white;
 }
@@ -41,23 +40,23 @@
 .input-group input,
 .input-group textarea {
     width: 100%;
-    padding: 8px;
+    padding: 12px; /* Increased padding */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px; /* Slightly more rounded */
 }
 
 .input-group textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 120px; /* Slightly taller */
 }
 
 .contact-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
+    padding: 12px 20px; /* Increased padding */
+    border-radius: 6px; /* Slightly more rounded */
     background-color: darkgray;
     color: white;
     cursor: pointer;
+    font-size: 20px; /* Increased font size */
 }
 
 .contact-button:hover {

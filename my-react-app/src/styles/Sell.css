@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica Neue, Arial;
+  box-sizing: border-box;
+}
+
+.sell-header{
+    position: relative;
+}
+
+.sell-img {
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  z-index: -1;
+}
+
+.sell-form{
+  position: absolute; /* Changed to absolute */
+  left: 10%;
+  top: 80%;
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.arrow{
+  position: absolute;
+  left: 23%;
+  top: 80%;
+  z-index: 2;
+}
+
+.sell-h1{
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.sell-hr{
+  width: 10%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.sell-p{
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+  margin: 0px 200px 50px 200px;
+}
+
+.evaluation-form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  margin: 0px 200px 0px 200px;
+}
+
+.seller-h2{
+  display: flex;
+  color: black;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.sell-hr2{
+  width: 10%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.sell-p2{
+  display: flex;
+  color: black;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+  margin: 0px 200px 50px 200px;
+}
+
+.form2{
+  width: 100%; /* Ensure it takes full width of its parent */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller-form{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 50%;
+  background-color: white;
+  justify-content: center;
+}
+
+.seller-label{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center; /* Center label and input */
+  width: 100%; /* Adjust if necessary */
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.seller-input{
+  width: 80%; /* Adjust width as needed */
+  border: 1px solid black;
+  padding: 8px;
+  margin-bottom: 10px; 
+}
+
+.sell-button{
+  background-color: darkgray;
+  border-radius: 5px;
+  padding: 10px 20px; /* Adjust padding for better button size */
+  border: none; /* Optional: Removes default button border */
+  cursor: pointer; 
+  margin-bottom: 20px;
+}
+
+.buying-service{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 90px 0px 20px 0px;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.buying-service-box{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.buying-hr{
+  width: 10%;
+  margin: 0 auto;
+}
+
+.sell-box1, .sell-box2, .sell-box3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  width: 400px;
+  height: 400px;
+  
+}
+
+.sell-box1{
+background-color: darkgray;
+} 
+.sell-box2{
+background-color: grey;
+}
+.sell-box3{
+  background-color: black;
+}
+
+.sell-box-p1, .sell-box-p2, .sell-box-p3{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 50px 20px 50px;
+  line-height: 1.4;
+}
+
+.sell-box-name1, .sell-box-name2, .sell-box-name3{
+  margin: 20px 0px 20px 50px;
+}
+
+.sell-box-hr1, .sell-box-hr2, .sell-box-hr3{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.buying-options-container{
+  display: flex;
+  margin: 80px 0px 50px 0px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-box1, .option-box2, .option-box3, .option-box4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: darkgray;
+  width: 300px;
+  height: 300px;
+  color: white;
+  gap: 20px;
+}
+.option-box1:hover, .option-box2:hover, .option-box3:hover, .option-box4:hover{
+background-color: black;
+}
+
+.purchase{
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.learn-more{
+  font-weight: 200;
+  font-size: 18px;
+}

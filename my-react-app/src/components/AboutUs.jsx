@@ -1,4 +1,5 @@
 import "../styles/Aboutus.css";
+
 import shelby from "../assets/shelby.jpg";
 import tele from "../assets/tele.png";
 import autocar from "../assets/autocar.png";
@@ -7,7 +8,8 @@ import evo from "../assets/evo.png";
 export const AboutUs = () => {
   return (
     <>
-      <div className="about-container">
+      <div className="about-container" >
+        <div className="triple-container">
         <h3 className="about-us">WHY CHOOSE LUXURY</h3>
         <hr className="about-hr"></hr>
         <div className="about-content">
@@ -20,6 +22,18 @@ export const AboutUs = () => {
             journalists and experts of our industry and most importantly, our
             clients.
           </div>
+        </div>
+        <div className="inspiring-container">
+          <h3 className="inspiring-h3">INSPIRING GREATNESS</h3>
+          <hr className="inspiring-hr"></hr>
+          <p className="inspiring-p">
+            Inspiring Greatness exists at the very core of Rolls-Royce Motor
+            Cars. It is the guiding force from which our innovation,
+            aspirations, and ongoing legacy unfold. As we continue to extend the
+            limits of possibility, Inspiring Greatness will forever remain our
+            ultimate pursuit.
+          </p>
+        </div>
         </div>
         <div className="media-content">
           <div className="image-overlay-container">

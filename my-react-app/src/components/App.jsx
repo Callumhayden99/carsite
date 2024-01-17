@@ -7,6 +7,7 @@ import { Carousel } from "./Carousel";
 import { Services } from "./Services";
 import { AboutUs } from "./AboutUs";
 import { OurValues } from "./OurValues";
+import { Sell } from "./Sell";
 import { MainContent } from "./MainContent";
 import { Footer } from "./Footer";
 
@@ -53,7 +54,6 @@ function App() {
             element={
               <>
                 <Cars />
-                
               </>
             }
           />
@@ -72,6 +72,15 @@ function App() {
                 <AboutUs />
                 <Footer />
               </>
+            }
+          />
+          <Route
+            path="/sell"
+            element={
+              <>
+                <Sell />
+              </>
+              
             }
           />
         </Routes>

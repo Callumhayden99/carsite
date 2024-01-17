@@ -27,6 +27,7 @@ export const ContactForm = () =>{
         <h1 className="contact-h1">ENQUIRIES & BOOKINGS</h1>
         <hr className="contact-hr"></hr>
         </div>
+        <div className="form-container">
         <form onSubmit={handleSubmit} className="contact-form">
         <div className="input-group">
             <label htmlFor="firstName">First Name</label>
@@ -80,6 +81,7 @@ export const ContactForm = () =>{
         </div>
         <button className="contact-button" type="submit">Submit</button>
     </form>
+    </div>
     </>
     )
 }
