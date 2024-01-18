@@ -128,7 +128,6 @@
 
 .carousel-container {
   width: calc(50% - 20px);
-
 }
 
 .latest-arrivals {
@@ -150,7 +149,6 @@
   flex-direction: column;
   font-size: 30px;
   font-weight: 400;
-  gap: 10px;
   min-height: 300px; 
   margin: 100px 100px 0px 75px;
   color: black;

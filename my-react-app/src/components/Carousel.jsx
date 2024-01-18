@@ -2,9 +2,9 @@ import "../styles/Carousel.css";
 import { useState, useEffect } from "react";
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import lambo from "../assets/lambo.jpg";
+import porshe911 from "../assets/porshe911.jpg";
 import aston from "../assets/aston.jpg";
-import r8 from "../assets/r8.jpg";
+import mclaren1 from "../assets/mclaren1.jpg";
 import ferrari from "../assets/ferrari.jpg";
 import mclaren from "../assets/mclaren.jpg";
 import rollscull from "../assets/rollscull.jpg";
@@ -49,13 +49,13 @@ export const Carousel = () => {
           <Slider>
             <Slide index={0}>
               <div className="slide">
-                LAMBORGHINI HURACAN TECNICA
+              PORSCHE 911 GT3 TOURING
                 <div className="car-container">
                   <img
                     className="car-img"
-                    src={lambo}
+                    src={porshe911}
                     width={300}
-                    alt="Lamborghini Huracan Tecnica"
+                    alt="PORSCHE 911 GT3 TOURING"
                   />
                   <div className="car-spec">
                     <div className="spec-1">
@@ -76,7 +76,7 @@ export const Carousel = () => {
                     </div>
                     <div className="spec-1">
                       <div className="colour">Colour:</div>
-                      <div className="sub-colour">Matte Black</div>
+                      <div className="sub-colour">GT Silver Metallic</div>
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export const Carousel = () => {
                     </div>
                     <div className="spec-1">
                       <div className="colour">Colour:</div>
-                      <div className="sub-colour">Green Metallic</div>
+                      <div className="sub-colour">Buckinghamshire Green</div>
                     </div>
                   </div>
                 </div>
@@ -119,13 +119,13 @@ export const Carousel = () => {
             </Slide>
             <Slide index={2}>
               <div className="slide">
-                AUDI R8 SPYDER
+              MCLAREN 570 GT MSO BLACK
                 <div className="car-container">
                   <img
                     className="car-img"
-                    src={r8}
+                    src={mclaren1}
                     width={300}
-                    alt="Audi R8 Spyder"
+                    alt="MCLAREN 570 GT MSO BLACK"
                   />
                   <div className="car-spec">
                     <div className="spec-1">
@@ -146,7 +146,7 @@ export const Carousel = () => {
                     </div>
                     <div className="spec-1">
                       <div className="colour">Colour:</div>
-                      <div className="sub-colour">Grey Metallic</div>
+                      <div className="sub-colour">MSO Carbon Black</div>
                     </div>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export const Carousel = () => {
                     </div>
                     <div className="spec-1">
                       <div className="colour">Colour:</div>
-                      <div className="sub-colour">Red</div>
+                      <div className="sub-colour">Rosso Portofino</div>
                     </div>
                   </div>
                 </div>
