@@ -98,7 +98,7 @@ form {
   background: var(--color-dark);
   border-radius: var(--rad);
 }
-input,
+.header-input,
 button {
   height: var(--height);
   font-family: var(--font-fam);
@@ -106,7 +106,7 @@ button {
   color: var(--color-dark);
   font-size: 1.8rem;
 }
-input[type="search"] {
+.header-input[type="search"] {
   color: #2f2f2f !important; 
   width: 100%;
   font-size: 20px;
@@ -123,7 +123,7 @@ input[type="search"] {
   position: relative;
 }
 
-input[type="search"]::placeholder {
+.header-input[type="search"]::placeholder {
   color: #2f2f2f !important; 
 }
 
@@ -138,14 +138,14 @@ input[type="search"]::placeholder {
   color: white;
 }
 
-input:not(:placeholder-shown) + button,
-input:focus + button {
+.header-input:not(:placeholder-shown) + button,
+.header-input:focus + button {
   display: block;
   background: #2f2f2f; 
   color: white; 
 }
 
-input:not(:placeholder-shown) {
+.header-input:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
   width: calc(100% - var(--btn-width));
   + button {

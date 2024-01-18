@@ -10,6 +10,7 @@ import { OurValues } from "./OurValues";
 import { Sell } from "./Sell";
 import { MainContent } from "./MainContent";
 import { Footer } from "./Footer";
+import { SellFormEvaluation } from "./SellFormEvaluation";
 
 function App() {
   const location = useLocation();
@@ -81,8 +82,16 @@ function App() {
                 <Sell />
                 <Footer />
               </>
-              
             }
+          />
+          <Route 
+          path="/sell-form-valuation"
+          element={
+            <>
+            <SellFormEvaluation />
+            <Footer />
+            </>
+          }
           />
         </Routes>
       </div>

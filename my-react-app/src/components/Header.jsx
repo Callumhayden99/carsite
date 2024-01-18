@@ -63,6 +63,7 @@ export const Header = () => {
           <form onSubmit={handleSubmit} role="search">
             <label className="search" htmlFor="search"></label>
             <input
+            className="header-input"
               id="search"
               type="search"
               placeholder="Search by make..."

@@ -1,6 +1,6 @@
 import "../styles/sell.css";
+import { NavLink } from "react-router-dom";
 import sell from "../assets/sell.jpg";
-import arrow from "../assets/arrow.svg";
 import bugatti from "../assets/bugatti.jpg";
 
 export const Sell = () => {
@@ -9,10 +9,8 @@ export const Sell = () => {
       <div className="sell-container">
         <div className="sell-header">
           <img className="sell-img" src={sell} alt="lamborghini on the track" />
-          <h2 className="sell-form">SELL FORM</h2>
-          <img className="arrow" src={arrow} width={90} alt="arrow svg" />
         </div>
-        <h1 className="sell-h1">SELL YOU CAR</h1>
+        <h1 className="sell-h1">SELL YOUR CAR</h1>
         <hr className="sell-hr"></hr>
         <p className="sell-p">
           At Luxury we are prolific buyers of the world’s finest supercars,
@@ -66,9 +64,11 @@ export const Sell = () => {
                   required
                 />
               </label>
+              <NavLink to="/sell-form-valuation">
               <button className="sell-button" type="submit">
                 Submit
               </button>
+              </NavLink>
             </form>
           </div>
         </div>
