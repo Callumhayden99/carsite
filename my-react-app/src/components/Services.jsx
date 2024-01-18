@@ -137,9 +137,6 @@ export const Services = () => {
         </section>
        <ContactForm/>
       </main>
-      <footer className="footer-content2">
-        <Footer />
-      </footer>
     </div>
   );
 };

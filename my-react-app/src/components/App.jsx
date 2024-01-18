@@ -63,6 +63,7 @@ function App() {
             element={
               <>
                 <Services />
+                <Footer />
               </>
             }
           />
@@ -72,6 +73,7 @@ function App() {
               <>
                 <AboutUs />
                 <Footer />
+                
               </>
             }
           />
