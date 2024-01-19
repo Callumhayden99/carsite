@@ -64,7 +64,7 @@
   width: 100%;
 }
 
-.filter-h1 {
+.filter-button {
   color: black;
   font-size: 18px;
   font-weight: 200;
@@ -72,6 +72,11 @@
   border: 1px black solid;
   width: fit-content;
   padding: 20px 40px;
+  background-color: white;
+}
+
+.filter-button:hover{
+color: red;
 }
 
 .filter-h2 {
@@ -188,6 +193,10 @@
     cursor: pointer;
     font-size: 17px;
     }
+
+  .car1:hover, .car2:hover {
+    color: red;
+  }
 
   .car2{
     color: gray;

@@ -57,7 +57,7 @@ export const Cars = () => {
           Close
         </div>
         <div className="filter-menu">
-          <h1 className="filter-h1">VIEW FULL STOCK</h1>
+          <button className="filter-button">VIEW FULL STOCK</button>
           <h2 className="filter-h2">SEARCH BY MANUFACTURER</h2>
           <div className="car-options">
             <button
