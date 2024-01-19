@@ -60,76 +60,76 @@ export const Cars = () => {
           <h1 className="filter-h1">VIEW FULL STOCK</h1>
           <h2 className="filter-h2">SEARCH BY MANUFACTURER</h2>
           <div className="car-options">
-            <span
+            <button
               className="car1"
               onClick={() => handleFilterClick("Aston Martin")}
             >
               Aston Martin
-            </span>
-            <span className="car1" onClick={() => handleFilterClick("Audi")}>
+            </button>
+            <button className="car1" onClick={() => handleFilterClick("Audi")}>
               Audi
-            </span>
-            <span className="car1" onClick={() => handleFilterClick("BMW")}>
+            </button>
+            <button className="car1" onClick={() => handleFilterClick("BMW")}>
               BMW
-            </span>
-            <span className="car1" onClick={() => handleFilterClick("Bentley")}>
+            </button>
+            <button className="car1" onClick={() => handleFilterClick("Bentley")}>
               Bentley
-            </span>
-            <span className="car1" onClick={() => handleFilterClick("Bugatti")}>
+            </button>
+            <button className="car1" onClick={() => handleFilterClick("Bugatti")}>
               Bugatti
-            </span>
-            <span className="car1" onClick={() => handleFilterClick("Ferrari")}>
+            </button>
+            <button className="car1" onClick={() => handleFilterClick("Ferrari")}>
               Ferrari
-            </span>
-            <span
+            </button>
+            <button
               className="car1"
               onClick={() => handleFilterClick("Lamborghini")}
             >
               Lamborghini
-            </span>
-            <span
+            </button>
+            <button
               className="car1"
               onClick={() => handleFilterClick("Land rover")}
             >
               Land rover
-            </span>
-            <span
+            </button>
+            <button
               className="car2"
               onClick={() => handleFilterClick("Maserati")}
             >
               Maserati
-            </span>
-            <span className="car2" onClick={() => handleFilterClick("Mclaren")}>
+            </button>
+            <button className="car2" onClick={() => handleFilterClick("Mclaren")}>
               Mclaren
-            </span>
-            <span className="car2" onClick={() => handleFilterClick("Porshe")}>
+            </button>
+            <button className="car2" onClick={() => handleFilterClick("Porshe")}>
               Porshe
-            </span>
-            <span className="car2" onClick={() => handleFilterClick("Mustang")}>
+            </button>
+            <button className="car2" onClick={() => handleFilterClick("Mustang")}>
               Mustang
-            </span>
-            <span
+            </button>
+            <button
               className="car2"
               onClick={() => handleFilterClick("Rolls-Royce")}
             >
               Rolls-Royce
-            </span>
-            <span
+            </button>
+            <button
               className="car2"
               onClick={() => handleFilterClick("Mercedes-Benz")}
             >
               Mercedes-Benz
-            </span>
+            </button>
           </div>
           <h2 className="search-bodystyle">SEARCH BY BODYSTYLE</h2>
           <div className="car-option">
-            <span>Coupe</span>
-            <span>SUV</span>
-            <span>Convertible</span>
-            <span>Estate</span>
-            <span>Saloon</span>
-            <span>Light 4x4 utility</span>
-            <span>Hatchback</span>
+            <button className="car1">Coupe</button>
+            <button className="car1">SUV</button>
+            <button className="car1">Convertible</button>
+            <button className="car1">Estate</button>
+            <button className="car1">Saloon</button>
+            <button className="car1">Light 4x4 utility</button>
+            <button className="car1">Hatchback</button>
           </div>
           <h3 className="latest">LATEST ARRIVALS</h3>
           <div className="left-menu">

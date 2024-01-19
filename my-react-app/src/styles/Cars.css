@@ -89,12 +89,15 @@
   color: darkgray;
   font-size: 15px;
   row-gap: 20px;
+  justify-items: start;
 }
 
 .search-bodystyle {
+  display: grid;
   color: black;
   font-size: 15px;
   margin: 20px 0px 30px 20px;
+  
 }
 
 .latest {
@@ -110,6 +113,7 @@
   margin-left: 20px;
   color: darkgray;
   font-size: 15px;
+  justify-items: start;
 }
 
 .sell {
@@ -175,4 +179,20 @@
 .spec-2 {
     display: flex;
     gap: 10px;
+  }
+
+  .car1{
+    color: gray;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 17px;
+    }
+
+  .car2{
+    color: gray;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 17px;
   }

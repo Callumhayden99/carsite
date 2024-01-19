@@ -99,7 +99,7 @@ form {
   border-radius: var(--rad);
 }
 .header-input,
-button {
+.submit-button {
   height: var(--height);
   font-family: var(--font-fam);
   border: 0;
@@ -138,8 +138,8 @@ button {
   color: white;
 }
 
-.header-input:not(:placeholder-shown) + button,
-.header-input:focus + button {
+.header-input:not(:placeholder-shown) + .submit-button,
+.header-input:focus + .submit-button {
   display: block;
   background: #2f2f2f; 
   color: white; 
@@ -148,7 +148,7 @@ button {
 .header-input:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
   width: calc(100% - var(--btn-width));
-  + button {
+  + .submit-button {
     display: block;
   }
 }
