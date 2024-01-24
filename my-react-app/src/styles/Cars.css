@@ -205,3 +205,38 @@ color: red;
     cursor: pointer;
     font-size: 17px;
   }
+
+  .fetch-data ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+    gap: 10px; /* Optional: adds some space between grid items */
+    margin-left: 420px;
+    margin-right: 100px;
+  }
+  
+  .car-card-container {
+    /* Adjust styling as needed, but the main layout is handled by the parent ul */
+  }
+  
+  .car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in the card */
+    border: 1px solid #ccc; /* Optional: for visualization */
+    padding: 10px; /* Optional: for some space inside the card */
+    background-color: white;
+  }
+
+  .car-card-name{
+    font-size: 28px;
+    font-weight: 200;
+  }
+  
+  .car-card-img {
+    max-width: 100%; /* Ensures the image does not overflow its container */
+    height: auto; /* Keeps the image aspect ratio */
+  }
+  

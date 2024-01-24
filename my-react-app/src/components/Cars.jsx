@@ -1,5 +1,6 @@
 import { LeftMenu } from "./LeftMenu";
 import { useEffect, useState } from "react";
+import "../styles/cars.css";
 
 export const Cars = () => {
   const [cars, setCars] = useState([]);
@@ -29,15 +30,17 @@ export const Cars = () => {
         <ul>
           {cars.map((car) => (
             <li key={car.id}>
+              <div className="car-card-container">
               <div className="car-card">
-                <img src={car.imageUrl} alt={car.name} className="car-image" />
+              <h2 className="car-card-name">{car.name}</h2>
+                <img className="card-card-img" src={car.imageUrl} alt={car.name} />
                 <div className="car-details">
-                  <h2>{car.name}</h2>
-                  <p>Price: £{car.price.toFixed(2)}</p>
+                  <p>Price: {car.price.toLocaleString("en-GB", { style: "currency", currency: "GBP" })}</p>
                   <p>Year: {car.year}</p>
                   <p>Colour: {car.colour}</p>
                   <p>Mileage: {car.mileage} miles</p>
                 </div>
+              </div>
               </div>
             </li>
           ))}
