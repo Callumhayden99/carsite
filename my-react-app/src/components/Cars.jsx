@@ -29,8 +29,9 @@ export const Cars = ({ selectedMake, selectedBodyStyle }) => {
         {cars
           .filter(
             (car) =>
-              (selectedMake === "" || car.make === selectedMake) &&
-              (selectedBodyStyle === "" || car.body === selectedBodyStyle)
+            // eslint-disable-next-line react/prop-types
+            (selectedMake === "" || car.make.toLowerCase() === selectedMake.toLowerCase()) &&
+            (selectedBodyStyle === "" || car.body === selectedBodyStyle)
           )
           .map((car) => (
             <li key={car.id}>

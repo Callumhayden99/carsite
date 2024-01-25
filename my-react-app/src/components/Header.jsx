@@ -1,13 +1,18 @@
 import "../styles/Header.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 
-export const Header = () => {
+// eslint-disable-next-line react/prop-types, no-unused-vars
+export const Header = ({ onSearch }) => {
+
+  const [searchInput, setSearchInput] = useState("");
+
   const handleSubmit = (event) => {
     event.preventDefault();
- 
-    console.log("Search submitted");
+    onSearch(searchInput);
   };
+
   return (
     <>
       <header className="header">
@@ -61,14 +66,15 @@ export const Header = () => {
         </nav>
         <div className="search-container">
           <form onSubmit={handleSubmit} role="search">
-            <label className="search" htmlFor="search"></label>
             <input
-            className="header-input"
+              className="header-input"
               id="search"
               type="search"
               placeholder="Search by make..."
               autoFocus
               required
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
             />
             <button className="submit-button" type="submit">Go</button>
           </form>

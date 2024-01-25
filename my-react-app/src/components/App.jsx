@@ -1,7 +1,7 @@
 import "../styles/App.css";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useLocation, Routes, Route } from "react-router-dom";
+import { useNavigate, useLocation, Routes, Route } from "react-router-dom";
 import { Header } from "./Header";
 import { Cars } from "./Cars";
 import { LeftMenu } from "./LeftMenu";
@@ -32,6 +32,14 @@ function App() {
     setSelectedBodyStyle("");
   };
 
+  let navigate = useNavigate();
+
+  const handleSearch = (make) => {
+    setSelectedMake(make);
+    navigate("/cars"); // Navigate programmatically to /cars
+  };
+
+
 
   useEffect(() => {
     const bodyStyle = document.body.style;
@@ -52,7 +60,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <Header />
+        <Header onSearch={handleSearch} />
         <Routes>
           <Route
             path="*"
