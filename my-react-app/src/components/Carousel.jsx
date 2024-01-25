@@ -36,6 +36,7 @@ export const Carousel = () => {
   }, []);
 
   return (
+    
     <div className="carousels-container">
       <div className="carousel-container">
         <CarouselProvider

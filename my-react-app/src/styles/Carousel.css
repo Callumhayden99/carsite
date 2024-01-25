@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
-  font-family: Roboto,Helvetica Neue,Arial;
+  box-sizing: border-box;
+  font-family: Roboto, Helvetica Neue, Arial;
 }
 
 .welcome-content {
@@ -124,24 +124,32 @@
   justify-content: center;
   gap: 20px;
   font-weight: 200;
+  background-color: white;
+  z-index: -5;
 }
 
 .carousel-container {
   width: calc(50% - 20px);
 }
 
-.latest-arrivals {
+.latest-container {
   display: flex;
-  color: white;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: 200;
-  margin: 60px 0px 30px 0px;
+  text-align: center;
+  flex-direction: column;
+  color: black;
+  background-color: white;
+  margin: 100px 0px 0px 0px;
 }
 
-.latest-hr {
-  width: 5%;
-  margin: 0 auto; 
+.latest-arrivals {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.latest-hr{
+  width: 10%;
+  margin: 0 auto;
 }
 
 .slide {
@@ -149,10 +157,10 @@
   flex-direction: column;
   font-size: 30px;
   font-weight: 400;
-  min-height: 300px; 
+  min-height: 300px;
   margin: 100px 100px 0px 75px;
   color: black;
-  background: rgb(169, 169, 169,0.8);
+  background: rgb(169, 169, 169, 0.8);
   border-radius: 10px;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,

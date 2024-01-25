@@ -60,8 +60,10 @@ export const MainContent = () => {
             <Route path="/sell"/>
         </Routes>
       </div>
+      <div className="latest-container">
       <h3 className="latest-arrivals">LATEST ARRIVALS</h3>
       <hr className="latest-hr"></hr>
+      </div>
     </>
   );
 };
