@@ -8,31 +8,16 @@ import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import { useState, useEffect } from "react";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Header } from "./Header";
-import { Footer } from "./Footer";
+
 import { NavLink } from "react-router-dom";
 
-export const LeftMenu = () => {
-
-    const [isSidebarOpen, setSidebarOpen] = useState(false); // Start with sidebar closed
+// eslint-disable-next-line react/prop-types
+export const LeftMenu = ({ onMakeSelect, onBodyStyleSelect, onResetFilters  }) => {
+  const [isSidebarOpen, setSidebarOpen] = useState(false); // Start with sidebar closed
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
-
-  const [filter, setFilter] = useState("");
-
-  const handleFilterClick = (manufacturer) => {
-    setFilter(manufacturer);
-  };
-
-  const allCars = [{}];
-
-  const getCars = (filter) => {
-    if (!filter) return allCars;
-    return allCars.filter((car) => car.manufacturer === filter);
-  };
-
-  const displayedCars = getCars(filter);
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 5;
@@ -45,9 +30,21 @@ export const LeftMenu = () => {
     return () => clearInterval(timer);
   }, [totalSlides]);
 
-    return(
-        <>
-        <Header />
+  const handleFilterClick = (make) => {
+    onMakeSelect(make); // Update the selected car make
+  };
+
+  const handleResetFilter = () => {
+    onMakeSelect(""); // Reset the filter
+  };
+
+  const handleBodyStyleClick = (bodyStyle) => {
+    onBodyStyleSelect(bodyStyle);
+  };
+
+  return (
+    <>
+      <Header />
       {!isSidebarOpen && (
         <div onClick={toggleSidebar} className="open-filters-btn">
           Open Filters
@@ -58,7 +55,12 @@ export const LeftMenu = () => {
           Close
         </div>
         <div className="filter-menu">
-          <button className="filter-button">VIEW FULL STOCK</button>
+          <button className="filter-button" onClick={onResetFilters}>
+            RESET FILTERS
+          </button>
+          <button className="filter-button" onClick={handleResetFilter}>
+            VIEW FULL STOCK
+          </button>
           <h2 className="filter-h2">SEARCH BY MANUFACTURER</h2>
           <div className="car-options">
             <button
@@ -66,9 +68,6 @@ export const LeftMenu = () => {
               onClick={() => handleFilterClick("Aston Martin")}
             >
               Aston Martin
-            </button>
-            <button className="car1" onClick={() => handleFilterClick("Audi")}>
-              Audi
             </button>
             <button className="car1" onClick={() => handleFilterClick("BMW")}>
               BMW
@@ -99,7 +98,7 @@ export const LeftMenu = () => {
             </button>
             <button
               className="car1"
-              onClick={() => handleFilterClick("Land rover")}
+              onClick={() => handleFilterClick("Land Rover")}
             >
               Land rover
             </button>
@@ -117,15 +116,9 @@ export const LeftMenu = () => {
             </button>
             <button
               className="car2"
-              onClick={() => handleFilterClick("Porshe")}
+              onClick={() => handleFilterClick("Porsche")}
             >
-              Porshe
-            </button>
-            <button
-              className="car2"
-              onClick={() => handleFilterClick("Mustang")}
-            >
-              Mustang
+              Porsche
             </button>
             <button
               className="car2"
@@ -142,13 +135,36 @@ export const LeftMenu = () => {
           </div>
           <h2 className="search-bodystyle">SEARCH BY BODYSTYLE</h2>
           <div className="car-option">
-            <button className="car1">Coupe</button>
-            <button className="car1">SUV</button>
-            <button className="car1">Convertible</button>
-            <button className="car1">Estate</button>
-            <button className="car1">Saloon</button>
-            <button className="car1">Light 4x4 utility</button>
-            <button className="car1">Hatchback</button>
+            <button
+              className="car1"
+              onClick={() => handleBodyStyleClick("Coupe")}
+            >
+              Coupe
+            </button>
+            <button
+              className="car1"
+              onClick={() => handleBodyStyleClick("SUV")}
+            >
+              SUV
+            </button>
+            <button
+              className="car1"
+              onClick={() => handleBodyStyleClick("Convertible")}
+            >
+              Convertible
+            </button>
+            <button
+              className="car1"
+              onClick={() => handleBodyStyleClick("SUV")}
+            >
+              Estate
+            </button>
+            <button
+              className="car1"
+              onClick={() => handleBodyStyleClick("Saloon")}
+            >
+              Saloon
+            </button>
           </div>
           <h3 className="latest">LATEST ARRIVALS</h3>
           <div className="left-menu">

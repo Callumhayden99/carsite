@@ -1,10 +1,11 @@
-import { LeftMenu } from "./LeftMenu";
 import { useEffect, useState } from "react";
 import "../styles/cars.css";
 
-export const Cars = () => {
+// eslint-disable-next-line react/prop-types
+export const Cars = ({ selectedMake, selectedBodyStyle }) => {
   const [cars, setCars] = useState([]);
 
+  // Function to fetch car data from your API
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,31 +24,61 @@ export const Cars = () => {
   }, []);
 
   return (
-    <>
-      <LeftMenu />
-      <h1>Luxury Cars</h1>
-      <div className="fetch-data">
-        <ul>
-          {cars.map((car) => (
+    <div className="fetch-data">
+      <ul>
+        {cars
+          .filter(
+            (car) =>
+              (selectedMake === "" || car.make === selectedMake) &&
+              (selectedBodyStyle === "" || car.body === selectedBodyStyle)
+          )
+          .map((car) => (
             <li key={car.id}>
               <div className="car-card-container">
-              <div className="car-card">
-              <h2 className="car-card-name">{car.name}</h2>
-                <img className="card-card-img" src={car.imageUrl} alt={car.name} />
-                <div className="car-details">
-                  <p>Price: {car.price.toLocaleString("en-GB", { style: "currency", currency: "GBP" })}</p>
-                  <p>Year: {car.year}</p>
-                  <p>Colour: {car.colour}</p>
-                  <p>Mileage: {car.mileage} miles</p>
+                <div className="car-card">
+                  <h2 className="car-card-name">{car.name}</h2>
+                  <img
+                    className="car-card-img"
+                    src={car.imageUrl}
+                    alt={car.name}
+                  />
+                  <div className="car-details">
+                    <div className="car-card-details">
+                      <p className="car-card-year1">Make:</p>
+                      <p className="car-card-year">{car.make}</p>
+                    </div>
+                    <div className="car-card-details">
+                      <p className="car-card-price1">Price:</p>
+                      <p className="car-card-price">
+                        {car.price.toLocaleString("en-GB", {
+                          style: "currency",
+                          currency: "GBP",
+                        })}
+                      </p>
+                    </div>
+                    <div className="car-card-details">
+                      <p className="car-card-year1">Year:</p>
+                      <p className="car-card-year">{car.year}</p>
+                    </div>
+                    <div className="car-card-details">
+                      <p className="car-card-mileage1">Mileage:</p>
+                      <p className="car-card-mileage">{car.mileage} miles</p>
+                    </div>
+                    <div className="car-card-details">
+                      <p className="car-card-colour1">Colour:</p>
+                      <p className="car-card-colour">{car.colour}</p>
+                    </div>
+                    <div className="car-card-details">
+                      <p className="car-card-body1">BodyStyle:</p>
+                      <p className="car-card-body">{car.body}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
               </div>
             </li>
           ))}
-        </ul>
-      </div>
-    </>
+      </ul>
+    </div>
   );
 };
-
 export default Cars;

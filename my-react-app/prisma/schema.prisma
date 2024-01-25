@@ -15,8 +15,10 @@ model LuxuryCar {
     mileage     Int
     colour      String
     year        Int
-    topSpeed    Int?  @map("top_speed")
-    zeroToSixty Int?  @map("0_60_speed")
+    make        String
+    body        String?
+    topSpeed    Int?   @map("top_speed")
+    zeroToSixty Int?   @map("0_60_speed")
 
     @@map("luxury_cars")
 }

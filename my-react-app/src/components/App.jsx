@@ -1,8 +1,10 @@
 import "../styles/App.css";
+import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation, Routes, Route } from "react-router-dom";
 import { Header } from "./Header";
 import { Cars } from "./Cars";
+import { LeftMenu } from "./LeftMenu";
 import { Carousel } from "./Carousel";
 import { Services } from "./Services";
 import { AboutUs } from "./AboutUs";
@@ -14,6 +16,22 @@ import { SellFormEvaluation } from "./SellFormEvaluation";
 
 function App() {
   const location = useLocation();
+  const [selectedMake, setSelectedMake] = useState("");
+  const [selectedBodyStyle, setSelectedBodyStyle] = useState("");
+
+  const handleMakeSelection = (make) => {
+    setSelectedMake(make);
+  };
+
+  const handleBodyStyleSelection = (bodyStyle) => {
+    setSelectedBodyStyle(bodyStyle);
+  };
+
+  const resetFilters = () => {
+    setSelectedMake("");
+    setSelectedBodyStyle("");
+  };
+
 
   useEffect(() => {
     const bodyStyle = document.body.style;
@@ -54,8 +72,16 @@ function App() {
             path="/cars"
             element={
               <>
-                <Cars />
-                
+                <LeftMenu
+                  onMakeSelect={handleMakeSelection}
+                  onBodyStyleSelect={handleBodyStyleSelection}
+                  onResetFilters={resetFilters} 
+                />
+                <Cars
+                  selectedMake={selectedMake}
+                  selectedBodyStyle={selectedBodyStyle}
+                />
+                <Footer />
               </>
             }
           />
@@ -74,7 +100,6 @@ function App() {
               <>
                 <AboutUs />
                 <Footer />
-                
               </>
             }
           />
@@ -87,14 +112,14 @@ function App() {
               </>
             }
           />
-          <Route 
-          path="/sell-form-valuation"
-          element={
-            <>
-            <SellFormEvaluation />
-            <Footer />
-            </>
-          }
+          <Route
+            path="/sell-form-valuation"
+            element={
+              <>
+                <SellFormEvaluation />
+                <Footer />
+              </>
+            }
           />
         </Routes>
       </div>

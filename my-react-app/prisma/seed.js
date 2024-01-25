@@ -15,6 +15,8 @@ async function createCar() {
             mileage: 6673,
             colour: "Onyx Black",
             year: 2020,
+            make: "Aston Martin",
+            body: "Coupe",
             topSpeed: 201.0,
             zeroToSixty: 3.5
         },
