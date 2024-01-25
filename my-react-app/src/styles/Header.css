@@ -161,3 +161,9 @@ form {
   overflow: hidden;
 }
 
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  background-color: yellow; 
+}
