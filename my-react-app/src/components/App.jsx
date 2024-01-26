@@ -13,6 +13,7 @@ import { Sell } from "./Sell";
 import { MainContent } from "./MainContent";
 import { Footer } from "./Footer";
 import { SellFormEvaluation } from "./SellFormEvaluation";
+import { BuyCar } from "./BuyCar";
 
 function App() {
   const location = useLocation();
@@ -38,8 +39,6 @@ function App() {
     setSelectedMake(make);
     navigate("/cars"); // Navigate programmatically to /cars
   };
-
-
 
   useEffect(() => {
     const bodyStyle = document.body.style;
@@ -83,7 +82,7 @@ function App() {
                 <LeftMenu
                   onMakeSelect={handleMakeSelection}
                   onBodyStyleSelect={handleBodyStyleSelection}
-                  onResetFilters={resetFilters} 
+                  onResetFilters={resetFilters}
                 />
                 <Cars
                   selectedMake={selectedMake}
@@ -125,6 +124,15 @@ function App() {
             element={
               <>
                 <SellFormEvaluation />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/buy-Car"
+            element={
+              <>
+                <BuyCar />
                 <Footer />
               </>
             }

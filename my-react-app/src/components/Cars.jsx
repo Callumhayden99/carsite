@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/cars.css";
+import { NavLink } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 export const Cars = ({ selectedMake, selectedBodyStyle }) => {
@@ -29,9 +30,11 @@ export const Cars = ({ selectedMake, selectedBodyStyle }) => {
         {cars
           .filter(
             (car) =>
-            // eslint-disable-next-line react/prop-types
-            (selectedMake === "" || car.make.toLowerCase() === selectedMake.toLowerCase()) &&
-            (selectedBodyStyle === "" || car.body === selectedBodyStyle)
+              // eslint-disable-next-line react/prop-types
+              (selectedMake === "" ||
+                // eslint-disable-next-line react/prop-types
+                car.make.toLowerCase() === selectedMake.toLowerCase()) &&
+              (selectedBodyStyle === "" || car.body === selectedBodyStyle)
           )
           .map((car) => (
             <li key={car.id}>
@@ -73,6 +76,11 @@ export const Cars = ({ selectedMake, selectedBodyStyle }) => {
                       <p className="car-card-body1">BodyStyle:</p>
                       <p className="car-card-body">{car.body}</p>
                     </div>
+                    <NavLink to="/buy-Car">
+                    <div className="car-card-details button-container">
+                      <button className="car-card-button" type="submit">ENQUIRY</button>
+                    </div>
+                    </NavLink>
                   </div>
                 </div>
               </div>

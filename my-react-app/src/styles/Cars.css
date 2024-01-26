@@ -227,7 +227,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 450px; /* Increased width */
-  height: 670px; /* Increased height */
+  height: 790px; /* Increased height */
   border: 1px solid #ccc;
   padding: 15px;
   background-color: white;
@@ -278,4 +278,15 @@
 .car-card-body1 {
   font-size: 27px;
   font-weight: 400;
+}
+
+.button-container {
+  display: flex;
+}
+
+.car-card-button{
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 150px;
 }
