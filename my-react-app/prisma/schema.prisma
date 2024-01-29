@@ -8,17 +8,22 @@ datasource db {
 }
 
 model LuxuryCar {
-    id          String @id @default(auto()) @map("_id") @db.ObjectId
-    name        String
-    price       Int
-    imageUrl    String @map("image_url")
-    mileage     Int
-    colour      String
-    year        Int
-    make        String
-    body        String?
-    topSpeed    Int?   @map("top_speed")
-    zeroToSixty Int?   @map("0_60_speed")
+    id           String   @id @default(auto()) @map("_id") @db.ObjectId
+    name         String
+    price        Int
+    imageUrl     String   @map("image_url")
+    photos       String[]
+    mileage      Int
+    colour       String
+    interior     String
+    year         Int
+    make         String
+    body         String?
+    topSpeed     Int?     @map("top_speed")
+    zeroToSixty  Int?     @map("0_60_speed")
+    engine       String
+    transmission String
+    overview     String?  @map("overview")
 
     @@map("luxury_cars")
 }

@@ -76,10 +76,10 @@ export const Cars = ({ selectedMake, selectedBodyStyle }) => {
                       <p className="car-card-body1">BodyStyle:</p>
                       <p className="car-card-body">{car.body}</p>
                     </div>
-                    <NavLink to="/buy-Car">
-                    <div className="car-card-details button-container">
-                      <button className="car-card-button" type="submit">ENQUIRY</button>
-                    </div>
+                    <NavLink to={`/buy-Car/${car.id}`}>
+                      <button className="car-card-button" type="submit">
+                        ENQUIRY
+                      </button>
                     </NavLink>
                   </div>
                 </div>

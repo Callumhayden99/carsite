@@ -290,3 +290,9 @@
   border-radius: 5px;
   margin: 5px 0px 0px 150px;
 }
+
+.back-button-car{
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}

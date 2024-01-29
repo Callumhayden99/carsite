@@ -15,6 +15,7 @@ import { Footer } from "./Footer";
 import { SellFormEvaluation } from "./SellFormEvaluation";
 import { BuyCar } from "./BuyCar";
 
+
 function App() {
   const location = useLocation();
   const [selectedMake, setSelectedMake] = useState("");
@@ -129,11 +130,11 @@ function App() {
             }
           />
           <Route
-            path="/buy-Car"
+            path="/buy-Car/:carId"
             element={
               <>
                 <BuyCar />
-                <Footer />
+              
               </>
             }
           />
