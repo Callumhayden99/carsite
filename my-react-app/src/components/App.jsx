@@ -134,7 +134,7 @@ function App() {
             element={
               <>
                 <BuyCar />
-              
+              <Footer />
               </>
             }
           />

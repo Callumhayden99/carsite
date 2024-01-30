@@ -157,8 +157,8 @@
   flex-direction: column;
   font-size: 30px;
   font-weight: 400;
-  min-height: 300px;
-  margin: 100px 100px 0px 75px;
+  min-height: 320px;
+  margin: 50px 50px 0px 75px;
   color: black;
   background: rgb(169, 169, 169, 0.8);
   border-radius: 10px;
@@ -185,6 +185,7 @@
   color: white;
   font-size: 30px;
   font-weight: 200;
+  margin-top: 10px;
 }
 
 .sub-speed,
@@ -194,7 +195,7 @@
 .sub-colour {
   color: black;
   font-size: 25px;
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: 200;
 }
 

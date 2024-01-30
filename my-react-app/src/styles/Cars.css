@@ -73,6 +73,7 @@
   width: fit-content;
   padding: 20px 40px;
   background-color: white;
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -219,7 +220,6 @@
 
 .car-card-container {
   display: flex;
-  justify-content: center;
 }
 
 .car-card {
@@ -245,8 +245,8 @@
 
 .car-card-details {
   display: flex;
-  flex-direction: row; /* Changed to row */
-  align-items: center; /* Align items vertically */
+  flex-direction: row; /* Already set to row */
+  justify-content: flex-start; /* Already set to flex-start */
   gap: 10px; /* Space between items */
   line-height: 2;
 }
@@ -289,10 +289,8 @@
   padding: 10px;
   border-radius: 5px;
   margin: 5px 0px 0px 150px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
-.back-button-car{
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-}

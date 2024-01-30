@@ -1,9 +1,58 @@
 import "../styles/sell.css";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import sell from "../assets/sell.jpg";
 import bugatti from "../assets/bugatti.jpg";
 
 export const Sell = () => {
+  const [formData, setFormData] = useState({
+    make: "",
+    model: "",
+    mileage: "",
+  });
+
+  const [formErrors, setFormErrors] = useState({
+    make: "",
+    model: "",
+    mileage: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const validateForm = () => {
+    const errors = {};
+
+    if (formData.make.trim() === "") {
+      errors.make = "Make is required";
+    }
+
+    if (formData.model.trim() === "") {
+      errors.model = "Model is required";
+    }
+
+    if (formData.mileage.trim() === "") {
+      errors.mileage = "Mileage is required";
+    }
+
+    setFormErrors(errors);
+
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      window.location.href = "/sell-form-valuation";
+    }
+  };
+
   return (
     <>
       <div className="sell-container">
@@ -41,8 +90,14 @@ export const Sell = () => {
                   className="seller-input"
                   type="text"
                   placeholder="Type make here..."
+                  name="make"
+                  value={formData.make}
+                  onChange={handleInputChange}
                   required
                 />
+                {formErrors.make && (
+                  <div className="error-message">{formErrors.make}</div>
+                )}
               </label>
               <label className="seller-label">
                 {" "}
@@ -51,8 +106,14 @@ export const Sell = () => {
                   className="seller-input"
                   type="text"
                   placeholder="Model make here..."
+                  name="model"
+                  value={formData.model}
+                  onChange={handleInputChange}
                   required
                 />
+                {formErrors.model && (
+                  <div className="error-message">{formErrors.model}</div>
+                )}
               </label>
               <label className="seller-label">
                 {" "}
@@ -61,13 +122,23 @@ export const Sell = () => {
                   className="seller-input"
                   type="text"
                   placeholder="Mileage make here..."
+                  name="mileage"
+                  value={formData.mileage}
+                  onChange={handleInputChange}
                   required
                 />
+                {formErrors.mileage && (
+                  <div className="error-message">{formErrors.mileage}</div>
+                )}
               </label>
               <NavLink to="/sell-form-valuation">
-              <button className="sell-button" type="submit">
-                Submit
-              </button>
+                <button
+                  className="sell-button"
+                  type="submit"
+                  onClick={handleSubmit}
+                >
+                  Submit
+                </button>
               </NavLink>
             </form>
           </div>
@@ -109,19 +180,27 @@ export const Sell = () => {
         <div className="buying-options-container">
           <div className="option-box1">
             <div className="purchase">OUTRIGHT PURCHASE</div>
-           <a href="#div_id1"><div className="learn-more">LEARN MORE</div></a>
+            <a href="#div_id1">
+              <div className="learn-more">LEARN MORE</div>
+            </a>
           </div>
           <div className="option-box2">
             <div className="purchase">SALE OR RETURN</div>
-            <a href="#div_id2"><div className="learn-more">LEARN MORE</div></a>
+            <a href="#div_id2">
+              <div className="learn-more">LEARN MORE</div>
+            </a>
           </div>
           <div className="option-box3">
             <div className="purchase">PART EXCHANGE</div>
-            <a href="#div_id3"><div className="learn-more">LEARN MORE</div></a>
+            <a href="#div_id3">
+              <div className="learn-more">LEARN MORE</div>
+            </a>
           </div>
           <div className="option-box4">
             <div className="purchase">FORWARD ORDER</div>
-            <a href="#div_id4"><div className="learn-more">LEARN MORE</div></a>
+            <a href="#div_id4">
+              <div className="learn-more">LEARN MORE</div>
+            </a>
           </div>
           <div id="div_id1"></div>
         </div>
@@ -258,12 +337,12 @@ export const Sell = () => {
               there is a premium to be made on a highly demanded car?
             </p>
             <p className="outright-p2">
-            We may well buy the order slot from you or sell it on for you hassle-free. Just get in touch.
+              We may well buy the order slot from you or sell it on for you
+              hassle-free. Just get in touch.
             </p>
           </div>
         </div>
-        <img className="bugatti"
-        src={bugatti} alt="bugatti" />
+        <img className="bugatti" src={bugatti} alt="bugatti" />
       </div>
     </>
   );
