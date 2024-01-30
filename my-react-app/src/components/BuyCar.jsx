@@ -89,12 +89,12 @@ export const BuyCar = () => {
         <div className="top-section">
           <div className="buy-car-details">
             <img
-              className="car-img"
+              className="car-img1"
               src={car.imageUrl}
               width={650}
               alt={car.name}
             />
-            <div className="car-buttons">
+            <div className="car-card-container">
             <button className="back-button-car" onClick={handleBack}>
               BACK TO RESULTS
             </button>
